@@ -18,7 +18,7 @@ When your app becomes large enough, you'd need some modularity
 to pay your technical debt. By **modules** I mean bundles
 of `components`, `partials`, `routes` and child `modules`.
 
-He're your typical module file:
+Here's your typical module file:
 ```
 // module.js
 
