@@ -48,16 +48,16 @@ module.exports = {
 
 And here is what you can do with it.
 
-Install all components and partials in module:
+* Install all components and partials in module.
 ```
 var module = require('module')
 Vue.registerModule(module)
 ```
-Get collection of routes.
+* Get collection of routes
 ```
 var routes = Vue.getRoutes(module)
 ```
-Which you can use easily in (vue-router)[https://github.com/vuejs/vue-router].
+Which you can easily use in [vue-router](https://github.com/vuejs/vue-router).
 ```
 Vue.use(VueRouter)
 var router = new VueRouter({history: true});
