@@ -9,6 +9,8 @@ var _ = require('lodash');
          * @param module
          */
         Vue.registerModule = function (module) {
+
+            // Register nested modules
             if (module.modules) {
                 var modules = module.modules
 
@@ -18,11 +20,13 @@ var _ = require('lodash');
             }
 
             // Register components
+            var components = module.components
             for (var index in components) {
                 this.component(index, components[index])
             }
 
             // Register partials
+            var partials = module.partials
             for (var index in partials) {
                 this.partial(index, partials[index])
             }
@@ -50,6 +54,7 @@ var _ = require('lodash');
 
             return module.routes
         }
+
     }
 
     if (typeof exports == "object") {
