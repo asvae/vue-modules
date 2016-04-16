@@ -2,29 +2,7 @@ var _ = require('lodash')
 
 (function () {
 
-    function install (Vue) {
-        /**
-         * Register collection of components.
-         *
-         * @param components
-         */
-        Vue.registerComponents = function (components) {
-            for (var index in components) {
-                this.component(index, components[index])
-            }
-        }
-
-        /**
-         * Register collection of partials.
-         *
-         * @param partials
-         */
-        Vue.registerPartials = function (partials) {
-            for (var index in partials) {
-                this.partial(index, partials[index])
-            }
-        }
-
+    function install(Vue) {
         /**
          * Register all components and partials in module recursively.
          *
@@ -39,8 +17,8 @@ var _ = require('lodash')
                 }
             }
 
-            this.registerPartials(module.partials)
-            this.registerComponents(module.components)
+            registerPartials(module.partials)
+            registerComponents(module.components)
         }
 
         /**
@@ -65,12 +43,36 @@ var _ = require('lodash')
 
             return module.routes
         }
+
+        /**
+         * Register collection of components.
+         *
+         * @param components
+         */
+        function registerComponents(components) {
+            for (var index in components) {
+                this.component(index, components[index])
+            }
+        }
+
+        /**
+         * Register collection of partials.
+         *
+         * @param partials
+         */
+        function registerPartials(partials) {
+            for (var index in partials) {
+                this.partial(index, partials[index])
+            }
+        }
     }
 
     if (typeof exports == "object") {
         module.exports = install
     } else if (typeof define == "function" && define.amd) {
-        define([], function(){ return install })
+        define([], function () {
+            return install
+        })
     } else if (window.Vue) {
         Vue.use(install)
     }
