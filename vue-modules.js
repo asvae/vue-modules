@@ -17,8 +17,15 @@ var _ = require('lodash');
                 }
             }
 
-            registerPartials(module.partials)
-            registerComponents(module.components)
+            // Register components
+            for (var index in components) {
+                this.component(index, components[index])
+            }
+
+            // Register partials
+            for (var index in partials) {
+                this.partial(index, partials[index])
+            }
         }
 
         /**
@@ -42,28 +49,6 @@ var _ = require('lodash');
             }
 
             return module.routes
-        }
-
-        /**
-         * Register collection of components.
-         *
-         * @param components
-         */
-        function registerComponents(components) {
-            for (var index in components) {
-                this.component(index, components[index])
-            }
-        }
-
-        /**
-         * Register collection of partials.
-         *
-         * @param partials
-         */
-        function registerPartials(partials) {
-            for (var index in partials) {
-                this.partial(index, partials[index])
-            }
         }
     }
 
