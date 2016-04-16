@@ -1,0 +1,15 @@
+{
+  "name": "asva-vue-modules",
+  "version": "0.0.1",
+  "description": "Easily add routes, components and partials to vue.",
+  "main": "vue-modules.js",
+  "scripts": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "lodash": "^4.6.0",
+    "vueify": "^8.3.5"
+  }
+}
