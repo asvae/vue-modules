@@ -12,5 +12,12 @@
   "dependencies": {
     "lodash": "^4.6.0",
     "vueify": "^8.3.5"
-  }
+  },
+  "keywords": [
+    "vue.js",
+    "modules"
+  ],
+  "repository": "https://github.com/Asvae/vue-modules.git",
+  "author": "Yauheni Prakopchyk",
+  "license": "MIT"
 }

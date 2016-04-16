@@ -1,4 +1,4 @@
-import _ from 'lodash'
+var _ = require('lodash')
 
 (function () {
 
