@@ -1,5 +1,6 @@
 # Vue Modules
-This vue.js plugin is aimed to simplify adding components, partals and routes.
+This library is **vue.js** plugin.
+It is intended to simplify adding components, partials and routes.
 It provides easy module structure and supports nested modules.
 
 ## Installing
