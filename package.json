@@ -4,14 +4,10 @@
   "description": "Easily add routes, components and partials to vue.",
   "main": "vue-modules.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1"
+    "test": "mocha"
   },
   "dependencies": {
-    "lodash": "^4.6.0",
-    "vueify": "^8.3.5"
+    "lodash": "^4.6.0"
   },
   "keywords": [
     "vue.js",
@@ -19,5 +15,9 @@
   ],
   "repository": "https://github.com/Asvae/vue-modules.git",
   "author": "Yauheni Prakopchyk",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
 }
