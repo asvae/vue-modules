@@ -1,3 +1,5 @@
+![Travis CI](https://travis-ci.org/Asvae/vue-modules.svg?branch=master)
+
 # Vue Modules
 This library is **vue.js** plugin.
 It is intended to simplify adding components, partials and routes.
