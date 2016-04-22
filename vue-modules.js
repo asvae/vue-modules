@@ -1,4 +1,4 @@
-var _ = require('lodash');
+var merge = require('lodash.merge');
 
 (function () {
 
@@ -46,7 +46,7 @@ var _ = require('lodash');
 
                 for (var index in modules) {
                     var childRoutes = this.getRoutes(modules[index])
-                    _.merge(routes, childRoutes)
+                    merge(routes, childRoutes)
                 }
 
                 return routes

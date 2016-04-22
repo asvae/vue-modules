@@ -63,8 +63,5 @@ describe('Vue modules', function () {
         it('gets routes', function () {
             assert(Object.keys(Vue.getRoutes(module)).length, 5)
         })
-
     })
-
-
 });
