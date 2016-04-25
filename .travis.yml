@@ -1,6 +1,13 @@
 language: node_js
 node_js:
-  - "5"
+- '5'
 install:
-  - npm install -g babel-cli
-  - npm install
+- npm install -g babel-cli
+- npm install
+deploy:
+  provider: npm
+  email: ontrew@gmail.com
+  api_key:
+    secure: Zb2lk5rW3dcHPGlvKOq3TGBWjrtA0lgOsdaPTy1G09qqsItXSk+2NrqsmAKgKcGHER7LVCtAGB2GQk95iq5GYuHmOFfBRQxgIR8U50rxxiYD4es0Xgq16MAEYhHIWEvbV5rLR4jCfErT1IGiKIm1HOatvrSI+EXurZB2PbGX6xxEKZVaq1HOcNvDIyoL3Ro86LqmLg13oICHQAH5F7JAWmq8rRhZlpUlC6mnuceOmCDQbbSl7iwBjMXVk7eRh+bABlqDKCcwtHYCdqB5YcJsxBU4BOLK6cR3IcLU0uHzNkV1Wj48rfJyfRHNxG8MUNsi3ZqdlepjVPvLqK9fiBU/sRu7lxrj5stgOzZuzlQ5oe7UlSXLFHX2tfd6LCpg7hPJukoFnpMIse7qN43a4yo3wNa+5ExxPrGxO0oWGR6gYnxMk9FyIpolis48j+zGCuOBdvBuYYYuBAvd0lPtYcEYkUVbK+7rkAJc593YJWYAopPoi5ZVwZpUpj/0x3U90nuSMcJM6tBH+pnb0G1M8LrUl5hT6sttzBMveDGYh58l2O4gwxbW59Zp46+PkPqsct+lj3Ixd2dAN1Sk1z0PtjkPmLltqRRjV569x0+2cUzhCCfQJ6sgaUDw55i8ElkhjMlyrpAAFgoN44leK0D/t9pAH1svMkeWmGlujsanV9fPFmo=
+  on:
+    repo: Asvae/vue-modules
