@@ -1,6 +1,6 @@
 {
   "name": "asva-vue-modules",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Easily add routes, components and partials to vue.",
   "main": "vue-modules.js",
   "scripts": {
