@@ -1,4 +1,4 @@
-var modulePlugin = require('./../vue-modules')
+var modulePlugin = require('./../script')
 var Vue = require('./vue-mock')
 modulePlugin(Vue)
 

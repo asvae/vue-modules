@@ -2,9 +2,10 @@
   "name": "asva-vue-modules",
   "version": "0.2.2",
   "description": "Easily add routes, components and partials to vue.",
-  "main": "vue-modules.js",
+  "main": "script-compiled.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "babel script.js --out-file script-compiled.js"
   },
   "keywords": [
     "vue.js",
@@ -14,6 +15,7 @@
   "author": "Yauheni Prakopchyk",
   "license": "MIT",
   "devDependencies": {
+    "babel-plugin-transform-object-assign": "^6.5.0",
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
   }
