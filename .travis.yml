@@ -5,6 +5,7 @@ install:
 - npm install -g babel-cli
 - npm install
 deploy:
+  skip_cleanup: true
   provider: npm
   email: ontrew@gmail.com
   api_key:
