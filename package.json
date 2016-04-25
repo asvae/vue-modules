@@ -6,9 +6,6 @@
   "scripts": {
     "test": "mocha"
   },
-  "dependencies": {
-    "lodash.merge": "^4.3.5"
-  },
   "keywords": [
     "vue.js",
     "modules"

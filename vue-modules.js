@@ -1,7 +1,5 @@
-var merge = require('lodash.merge');
-
 (function () {
-
+    
     function install(Vue) {
         /**
          * Register all components and partials in module recursively.
@@ -46,7 +44,7 @@ var merge = require('lodash.merge');
 
                 for (var index in modules) {
                     var childRoutes = this.getRoutes(modules[index])
-                    merge(routes, childRoutes)
+                    Object.assign(routes, childRoutes)
                 }
 
                 return routes
