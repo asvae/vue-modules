@@ -42,10 +42,10 @@ module.exports = {
             }
         },
     },
-    modules: {
+    modules: [
         require('./modules/BoardEditor'),
         require('./modules/ProxyManager'),
-    }
+    ]
 }
 ```
 
